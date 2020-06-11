@@ -1,0 +1,41 @@
+import turtle
+t = turtle.Turtle()
+len=70
+def frame():
+    t.rt(180)
+    t.fd(len)#1
+    t.rt(90)
+    t.fd(len)#2
+    t.rt(30)
+    t.fd(len)#3
+    t.rt(60)
+    t.fd(len)#4
+    t.lt(30)
+    t.fd(2*len)#5
+    t.rt(30)
+    t.fd(3*len)#6a
+    t.rt(30)
+    t.fd(len*3)#7
+    t.lt(30)
+    t.fd(2*len)#8
+    t.rt(90)
+    t.fd(len+25)#10
+    t.rt(90)
+    t.fd(3*len)#11
+    t.rt(90)
+    wheels()
+    t.lt(90)
+    t.fd(5*len)
+    t.rt(90)
+    wheels()
+    t.lt(90)
+    t.fd(2.4*len)
+
+def wheels():
+    for j in range(9):
+        for i in range(3):
+            t.fd(7)
+            t.rt(10)
+        t.rt(10)
+
+frame()
